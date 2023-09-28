@@ -1,0 +1,10 @@
+type UserObject {
+  id: String!
+  username: String!
+  bio: String
+  avatar: String
+}
+
+type Query {
+  getUser(id: String!): UserObject!
+}

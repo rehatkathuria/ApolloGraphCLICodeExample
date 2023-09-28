@@ -1,0 +1,45 @@
+{
+  "schemaNamespace" : "Networking",
+  "schemaDownload": {
+	  "downloadMethod": {
+		  "apolloRegistry": {
+			  "_0": {
+				  "graphID": "XXXXXXX",
+				  "apiKey": "service:XXXXXX",
+				  "variant": "current"
+			  }
+		  }
+	  },
+	  "downloadTimeout": 60,
+	  "headers": {
+		  "Accept-Encoding" : "gzip",
+		  "Authorization" : "Bearer <token>"
+	  },
+	  "outputPath": "./graphql-schema/"
+  },
+  "input" : {
+	"operationSearchPaths" : [
+	  "**/*.graphql"
+	],
+	"schemaSearchPaths" : [
+	  "**/*.graphql"
+	]
+  },
+  "output" : {
+	"testMocks" : {
+	  "none" : {
+	  }
+	},
+	"schemaTypes" : {
+	  "path" : "./Networking",
+	  "moduleType" : {
+		"swiftPackageManager" : {
+		}
+	  }
+	},
+	"operations" : {
+	  "inSchemaModule" : {
+	  }
+	}
+  }
+}
